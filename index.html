@@ -42,7 +42,11 @@
             <li><a href="" class="menu-item link">Contacts</a></li>
           </ul>
         </nav>
-
+        <button class="mobile-menu-open-btn" type="button">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-tel-mail">
           <ul class="tel-mail-header list">
             <li>
@@ -58,21 +62,44 @@
           </ul>
         </address>
       </div>
+
+      <!-- мобільне меню хедера -->
+
+      <div class="mobile-menu">
+        <div class="container">
+          <button type="button" class="mobile-modal-btn">
+            <svg class="backdrop-modal-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="menu list list-header-container">
+          <li>
+            <a href="./index.html" class="menu-item link current-page"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="menu-item link">Portfolio</a>
+          </li>
+          <li><a href="" class="menu-item link">Contacts</a></li>
+        </ul>
+      </div>
     </header>
-    <main>
-      <!-- SECTION 1 - HERO -->
-      <section class="section-hero">
+    <!-- <main> -->
+    <!-- SECTION 1 - HERO -->
+    <!-- <section class="section-hero">
         <div class="container section-hero-container">
           <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
           <button class="modal-open-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <!-- SECTION 2 -->
+    <!-- SECTION 2 -->
 
-      <section class="features-section">
+    <!-- <section class="features-section">
         <div class="features-list-container container">
           <h2 class="visually-hidden">webstudio-features</h2>
 
@@ -128,11 +155,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- section 3 -->
+    <!-- section 3 -->
 
-      <section class="main-page-fotos">
+    <!-- <section class="main-page-fotos">
         <div class="container main-page-container">
           <h2 class="section-name section-foto-name">What are we doing</h2>
           <ul class="list fotos-list-container">
@@ -162,11 +189,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- section 4 -->
+    <!-- section 4 -->
 
-      <section class="section-team">
+    <!-- <section class="section-team">
         <div class="container">
           <h2 class="section-team-name section-name">Our Team</h2>
           <ul class="list section-team-container">
@@ -428,11 +455,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- SECTION 5 -->
+    <!-- SECTION 5 -->
 
-      <section class="section-customers">
+    <!-- <section class="section-customers">
         <div class="container">
           <h2 class="section-name">Customers</h2>
           <ul class="customers-list list">
@@ -515,9 +542,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- FOOTER -->
-    <footer class="main-footer">
+    <!-- <footer class="main-footer">
       <div class="container main-footer-container">
         <div class="footer-container">
           <a class="logo link footer-link" href="./index.html"
@@ -609,19 +636,19 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- МОДАЛЬНЕ ВІКНО -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="backdrop-modal-btn">
           <svg class="backdrop-modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
-        </button>
+        </button> -->
 
-        <!-- модальна форма NAME PHONE EMAIL-->
-        <p class="contact-form-header">
+    <!-- модальна форма NAME PHONE EMAIL-->
+    <!-- <p class="contact-form-header">
           Leave your contacts and we will call you back
         </p>
         <form class="contact-form-wrapper">
@@ -693,11 +720,11 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-          </div>
+          </div> -->
 
-          <!-- модальна форма COMMENT-->
+    <!-- модальна форма COMMENT-->
 
-          <div class="comment-wrapper">
+    <!-- <div class="comment-wrapper">
             <label class="contact-form-field-wrapper" for="user-comment">
               Comment
             </label>
@@ -707,11 +734,11 @@
               id="user-comment"
               placeholder="Text input"
             ></textarea>
-          </div>
+          </div> -->
 
-          <!--------  Privacy Policy-------->
+    <!--------  Privacy Policy-------->
 
-          <div class="policy-agreement-wrapper">
+    <!-- <div class="policy-agreement-wrapper">
             <input
               class="agreement-checkbox visually-hidden"
               type="checkbox"
@@ -737,14 +764,14 @@
               I accept the terms and conditions of the
               <a class="privacy-policy-link" href="">Privacy Policy</a>
             </label>
-          </div>
+          </div> -->
 
-          <!------------ SUBMIT BUTTON ----------->
+    <!------------ SUBMIT BUTTON ----------->
 
-          <button type="submit" class="form-submit-btn">Send</button>
+    <!-- <button type="submit" class="form-submit-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
