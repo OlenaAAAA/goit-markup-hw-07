@@ -144,6 +144,8 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .mobile-menu.is-open {
   visibility: visible;
@@ -382,6 +384,15 @@ img {
   .page-header-container {
     justify-content: space-between;
   }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  /* .page-header {
+    display: flex;
+    justify-content: center;
+  } */
 }
 
 /* 
@@ -426,24 +437,13 @@ img {
   gap: 40px;
 }
 
-/* ADDRESS */
-
-/* 
-
-/* після натискання */
-/*  */
-
-/* 
-
- */
-
-/* border для header(а)  */
-
-/*  */
 
 /* HERO mobile */
 
 .section-hero {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   background-color: var(--accent-color);
   padding-top: 112px;
   padding-bottom: 112px;
@@ -453,7 +453,8 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/people-office.jpg');
-  max-width: 767px;
+  max-width: 1440px;
+  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -470,38 +471,6 @@ img {
   display: block;
   margin: auto;
 }
-
-/* .section-hero {
-  background-color: var(--accent-color);
-  padding-top: 188px;
-  padding-bottom: 188px;
-  margin: auto;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url('../images/people-office.jpg');
-  max-width: 757px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-.section-hero-container {
-  display: block;
-}
-
-/* .hero-tittle {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: var(--bodycolor);
-  text-align: center;
-  max-width: 496px;
-  display: block;
-  margin: auto;
-} */
 
 .modal-open-btn {
   font-family: Roboto, sans-serif;
@@ -528,42 +497,100 @@ img {
   background-color: var(--ocean-color);
 }
 
+/* HERO for TABLET and desktop*/
+
+@media screen and (min-width: 768px) {
+  .hero-tittle {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+}
+
 /* -- SECTION 2 --*/
 
+.features-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.features-list-item-icon {
+  display: none;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
 .li-header {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .paragraf-description {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
 
-.features-section {
+@media screen and (min-width: 768px) {
+  .list-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .features-list-item {
+    /* display: flex; */
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* .features-list-item {
+  width: 100%;
+} */
+
+/* .li-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+  text-align: center;
+} */
+
+/* .paragraf-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+} */
+
+/* .features-section {
   padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 0px;
   padding-right: 0px;
-}
+} */
 
-.features-list-item {
+/* .features-list-item {
   width: calc((100%-72px) / 4);
-}
+}  */
 
-.list-container {
-  display: flex;
-  gap: 24px;
-}
-
-.features-list-item-icon {
+/* .features-list-item-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,11 +598,15 @@ img {
   background: var(--cloud-color);
   border-radius: 4px;
   margin-bottom: 8px;
-}
+} */
 
 /* SECTION 3 */
 
 .main-page-fotos {
+  display: none;
+}
+
+/* .main-page-fotos {
   padding-bottom: 120px;
 }
 
@@ -593,7 +624,8 @@ img {
 
 .main-page-container {
   display: block;
-}
+} */
+
 /* section 4 */
 
 .section-name {
