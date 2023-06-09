@@ -445,9 +445,6 @@ img {
 /* HERO mobile */
 
 .section-hero {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: var(--accent-color);
   padding-top: 112px;
   padding-bottom: 112px;
@@ -456,12 +453,82 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/people-office.jpg');
-  max-width: 1440px;
-  /* width: 100%; */
+    url('../images/people-office-mobile.jpg');
+  max-width: 767px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* mobile   0px-767px    2x */
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-mobile@2x.jpg');
+  }
+}
+
+/* tablet   768px-1157px */
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 1157px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-tablet.jpg');
+  }
+}
+
+/* tablet   768px-1157px   2x    */
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-tablet@2x.jpg');
+  }
+}
+
+/* desktop   1158px+     */
+
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-desktop.jpg');
+  }
+}
+
+/* desktop   1158px+   2x    */
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-desktop@2x.jpg');
+  }
 }
 
 .hero-tittle {
